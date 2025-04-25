@@ -31,7 +31,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(25deg, rgba(16, 0, 121, 1) 0%, #27213B;
+  background: linear-gradient(25deg, rgba(16, 0, 121, 1) 0%, #27213B 100%;
   pointer-events: none;
   z-index: -1;
 }
@@ -39,7 +39,7 @@ body {
 .card {
   margin-top: 60px;
   background: #1b1230;
-  background: linear-gradient(0deg, rgba(27, 18, 48, 0.38) 0%, #221D33;
+  background: linear-gradient(0deg, rgba(27, 18, 48, 0.38) 0%, #221D33 100%;
   --background: #eee4f2;
   border-radius: 20px;
   padding: clamp(20px, 5vw, 60px);
