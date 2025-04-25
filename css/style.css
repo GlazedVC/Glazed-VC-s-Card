@@ -13,9 +13,7 @@ html {
 }
 
 body {
-  font-family: 'Inter';
-  background: rgba(7, 0, 56, 0.67);
-  background: linear-gradient(0deg, rgba(7, 0, 56, 0.8) 0%, rgba(0, 52, 71, 1) 100%);
+  font-family: 'Inter'; 
   color: #FFFFFF;
   display: flex;
   justify-content: center;
@@ -39,7 +37,9 @@ body {
 
 .card {
   margin-top: 60px;
-  background: #eee4f2;
+  background: rgba(7, 0, 56, 0.67);
+  background: linear-gradient(0deg, rgba(7, 0, 56, 0.8) 0%, rgba(0, 33, 48, 1) 100%);
+  --background: #eee4f2;
   border-radius: 20px;
   padding: clamp(20px, 5vw, 60px);
   display: flex;
