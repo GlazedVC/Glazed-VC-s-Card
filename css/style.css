@@ -39,7 +39,7 @@ body {
 .card {
   margin-top: 60px;
   background: #1b1230;
-  background: linear-gradient(0deg, rgba(27, 18, 48, 0.38) 0%, rgba(39, 33, 59, 1) 100%);
+  background: linear-gradient(0deg, rgba(27, 18, 48, 0.38) 25%, rgba(39, 33, 59, 1) 100%);
   --background: #eee4f2;
   border-radius: 20px;
   padding: clamp(20px, 5vw, 60px);
