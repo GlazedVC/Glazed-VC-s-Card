@@ -24,7 +24,8 @@ body {
   background-image: url('../img/Leafeon.png');
   background-size: 120%;
   background-repeat: no-repeat;
-  background-position: 0px 0px; 
+  background-position: -60px -60px; 
+  background-attachment: fixed;
 }
 
 .overlay {
@@ -116,8 +117,7 @@ h3 {
 }
 
 .button, .button_content {
-  font-size: clamp(0.9rem, 2.5vw, 1.375em);
-  background: transparent;
+  font-size: clamp(0.9rem, 2.5vw, 1.375em); 
   border: 2px solid var(--main_color);
   border-radius: 10px;
   padding-inline: clamp(15px, 4vw, 30px);
@@ -145,6 +145,7 @@ h3 {
 .button_content:hover .icon-svg {
   filter: var(--color_filter_hover)
 }
+
 
 .icon-svg {
   width: 40px;
