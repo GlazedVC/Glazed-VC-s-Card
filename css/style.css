@@ -146,6 +146,16 @@ h3 {
   filter: var(--color_filter_hover)
 }
 
+hr {
+  width: 100%;
+}
+
+p {
+  white-space: normal;
+  overflow-wrap: break-word;
+  width: 80vw;
+  text-align: left;
+}
 
 .icon-svg {
   width: 40px;
