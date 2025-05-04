@@ -15,7 +15,7 @@ html {
 }
 
 body {
-  font-family: 'Inter'; 
+  font-family: 'Inter';
   color: #FFFFFF;
   background: #4E427A;
   display: flex;
@@ -24,7 +24,7 @@ body {
   background-image: url('../img/Leafeon.png');
   background-size: 120%;
   background-repeat: no-repeat;
-  background-position: -60px -60px; 
+  background-position: -60px -60px;
   background-attachment: fixed;
 }
 
@@ -33,8 +33,8 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%; 
-  background: linear-gradient(212deg,rgba(78, 66, 122, 0.38) 0%, rgba(21, 10, 61, 1) 100%); 
+  height: 100%;
+  background: linear-gradient(212deg, rgba(78, 66, 122, 0.38) 0%, rgba(21, 10, 61, 1) 100%);
   pointer-events: none;
   z-index: -1;
 }
@@ -54,7 +54,7 @@ body {
   box-shadow: 0 4px 20px rgb(0, 0, 0);
   z-index: 1;
   animation: fadeUp 2s ease-out forwards;
-  background-blend-mode : multiply;
+  background-blend-mode: multiply;
 }
 
 table {
@@ -62,7 +62,7 @@ table {
 }
 
 td {
-  text-align: left;
+  text-align: left; 
 }
 
 .cell-subtitle {
@@ -81,7 +81,10 @@ td {
   box-shadow: 0 0px 25px #230041;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   font-family: 'Press Start 2P', cursive;
   color: var(--main_color);
 }
@@ -116,8 +119,9 @@ h3 {
   width: 100%;
 }
 
-.button, .button_content {
-  font-size: clamp(0.9rem, 2.5vw, 1.375em); 
+.button,
+.button_content {
+  font-size: clamp(0.9rem, 2.5vw, 1.375em);
   border: 2px solid var(--main_color);
   border-radius: 10px;
   padding-inline: clamp(15px, 4vw, 30px);
@@ -135,14 +139,37 @@ h3 {
   animation: fadeUp 0.6s ease-out forwards;
 }
 
-.button:hover, .button_content:hover {
+.button_return {
+  font-size: 0.9rem;
+  border: 2px solid var(--main_color);
+  border-radius: 10px;
+  padding: 15px;
+  color: var(--main_color);
+  cursor: pointer;
+  display: flex;
+  float: left;
+  align-items: center;
+  width: 50%;
+  justify-content: space-between;
+  text-decoration: none;
+  gap: 1rem;
+  transition: scale 0.2s ease;
+  font-family: 'Press Start 2P', cursive;
+  opacity: 0;
+  animation: fadeUp 0.6s ease-out forwards;
+}
+
+.button:hover,
+.button_content:hover,
+.button_return:hover {
   color: #9280FF;
   border-color: #9280FF;
   scale: 1.05;
 }
 
 .button:hover .icon-svg,
-.button_content:hover .icon-svg {
+.button_content:hover .icon-svg,
+.button_return:hover .icon-svg {
   filter: var(--color_filter_hover)
 }
 
@@ -150,7 +177,7 @@ hr {
   width: 100%;
 }
 
-p {
+.paragraph {
   white-space: normal;
   overflow-wrap: break-word;
   width: 80vw;
@@ -175,15 +202,18 @@ p {
   .card {
     margin-top: 20px;
   }
-  table, tr, td {
+
+  table,
+  tr,
+  td {
     display: block;
     width: 100%;
-    text-align: center;
+    text-align: center; 
   }
 
-  .icon{
+  .icon {
     padding-top: 20px;
-    justify-content: center;  
+    justify-content: center;
   }
 
   .links {
@@ -195,7 +225,8 @@ p {
     text-align: left;
   }
 
-  .button, .button_content {
+  .button,
+  .button_content {
     justify-content: center;
   }
 }
@@ -205,17 +236,41 @@ p {
     opacity: 0;
     transform: translateY(60px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
   }
 }
 
- .button a:nth-child(1) { animation-delay: 0.4s; }
- .button a:nth-child(2) { animation-delay: 0.5s; }
- .button a:nth-child(3) { animation-delay: 0.6s; }
- .button a:nth-child(4) { animation-delay: 0.7s; }
- .button a:nth-child(5) { animation-delay: 0.8s; }
- .button a:nth-child(6) { animation-delay: 0.9s; }
- .button_content a:nth-child(7) { animation-delay: 1s; }
- .button_content a:nth-child(8) { animation-delay: 1.1s; }
+.button a:nth-child(1) {
+  animation-delay: 0.4s;
+}
+
+.button a:nth-child(2) {
+  animation-delay: 0.5s;
+}
+
+.button a:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+.button a:nth-child(4) {
+  animation-delay: 0.7s;
+}
+
+.button a:nth-child(5) {
+  animation-delay: 0.8s;
+}
+
+.button a:nth-child(6) {
+  animation-delay: 0.9s;
+}
+
+.button_content a:nth-child(7) {
+  animation-delay: 1s;
+}
+
+.button_content a:nth-child(8) {
+  animation-delay: 1.1s;
+}
