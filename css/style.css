@@ -211,6 +211,10 @@ hr {
     text-align: center; 
   }
 
+  .izquierda{
+    text-align: left;
+  }
+
   .icon {
     padding-top: 20px;
     justify-content: center;
